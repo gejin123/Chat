@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="100dp"
+                android:src="@drawable/loginhead"
+                />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:text="旺信"
+                android:textColor="@color/blue3"
+                android:textSize="48dp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <EditText
+                android:id="@+id/account"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/shape_edit"
+                android:hint="淘宝账号/手机号"
+                android:paddingLeft="50dp"
+                android:textCursorDrawable="@drawable/shape_cursor"
+                android:textSize="20dp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="15dp"
+                android:layout_alignBottom="@id/account"
+                android:layout_alignTop="@id/account"
+                android:layout_marginLeft="30dp"
+                android:paddingLeft="5dp"
+                android:src="@drawable/account"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <EditText
+                android:id="@+id/key"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/shape_edit"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:paddingLeft="50dp"
+                android:textCursorDrawable="@drawable/shape_cursor"
+                android:textSize="20dp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="15dp"
+                android:layout_alignBottom="@id/key"
+                android:layout_alignTop="@id/key"
+                android:layout_marginLeft="30dp"
+                android:paddingLeft="5dp"
+                android:src="@drawable/key"/>
+
+            <ImageView
+                android:id="@+id/eye"
+                android:clickable="true"
+                android:layout_width="30dp"
+                android:layout_height="15dp"
+                android:layout_alignBottom="@id/key"
+                android:layout_alignTop="@id/key"
+                android:layout_marginLeft="290dp"
+                android:src="@drawable/eye"/>
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_btn"
+            android:text="登录"
+            android:textColor="@color/side_bar_pressed"
+            android:textSize="25dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <CheckBox
+                android:id="@+id/remember_pass"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="260dp"
+                android:gravity="right"
+                android:paddingTop="7dp"
+                android:paddingRight="5dp"
+                android:text="记住密码"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="200dp"
+            android:gravity="center"
+            android:text="Copyright @2011-2017 Taobao.com"
+            android:textColor="@color/side_bar_pressed"/>
+        </LinearLayout>
+</LinearLayout>
